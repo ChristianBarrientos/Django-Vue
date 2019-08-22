@@ -9,4 +9,4 @@ npm install -g @vue/cli-init
 npm install bootstrap-vue
 
 
-#https://www.youtube.com/watch?v=nc3jQkaimfE&list=PLpOqH6AE0tNh7-Z-Lka9e0hRA2OdNB0dx&index=6
+#https://www.youtube.com/watch?v=Vpwzi1260fg&list=PLpOqH6AE0tNh7-Z-Lka9e0hRA2OdNB0dx&index=10

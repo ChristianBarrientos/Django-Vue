@@ -5,8 +5,8 @@
                 <h2>Listado de Libros</h2>
                 <div class="col-md-12">
                     <b-table striped hover :items="books" :fields="fields"> 
-                        <template slot="action" slot-scoped="d ata">
-                            <b-button size="sm" variant="primary">
+                        <template slot="action" slot-scoped="data">
+                            <b-button size="sm" variant="primary" :to="{ name:'EditBook', params: {bookId: data.item.id} }">
                                 Editar
                             </b-button>
                             <b-button size="sm" variant="danger">
@@ -14,7 +14,6 @@
                             </b-button>
                         </template>
                     </b-table>
-
                 </div>
             </div>
         </div>
@@ -29,7 +28,7 @@ export default {
             fields:[
                 { key: 'title', label:'Titulo'},
                 { key: 'description', label:'Descripcion'},
-                { key: 'action', label:''},
+                { key: 'action', label:''}
             ],
             books: []
         }
@@ -43,14 +42,12 @@ export default {
             })
             .catch(err =>{
                 console.log(err);
-                
             })
         }
     },
     created() {
         this.getBooks()
     },
-    
 }
 </script>
 <style lang="css" scoped>
